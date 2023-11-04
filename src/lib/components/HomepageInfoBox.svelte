@@ -6,7 +6,7 @@
 	export let images: ImageWithAlt[] | undefined = undefined;
 </script>
 
-<div class="text-center text-white bg-red-600 mx-1 mb-1 py-2 rounded-lg">
+<div class="text-center text-white bg-[#ee2f24] mx-1 mb-1 py-2 rounded-lg">
 	<h1 class="text-2xl">{title}</h1>
 	{#if description}
 		<p class="mt-1">{description}</p>
