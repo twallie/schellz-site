@@ -1,10 +1,8 @@
 <script lang="ts">
 	import '../app.css';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
-<div class="flex">
-	<h1>LOGO HERE</h1>
-	<button class="absolute right-0">SIDEBAR HERE</button>
-</div>
+<Header />
 
 <slot />
