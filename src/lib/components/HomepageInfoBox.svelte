@@ -1,12 +1,19 @@
 <script lang="ts">
-	import type { ImageWithAlt } from '$lib/types';
+	import type { ImageWithAlt, InfoBoxTextColorOptions } from '$lib/types';
 
 	export let title: string;
 	export let description: string | undefined = undefined;
 	export let images: ImageWithAlt[] | undefined = undefined;
+	export let textColor: InfoBoxTextColorOptions = 'white';
 </script>
 
-<div class="text-center text-white bg-[#ee2f24] mx-1 mb-1 py-2 rounded-lg">
+<div
+	class="
+		text-center
+		{textColor == 'white' ? 'text-white' : 'text-black'}
+		bg-[#ee2f24] mx-1 mb-1 py-2 rounded-lg
+	"
+>
 	<h1 class="text-2xl">{title}</h1>
 	{#if description}
 		<p class="mt-1">{description}</p>
