@@ -5,13 +5,16 @@
 	export let description: string | undefined = undefined;
 	export let images: ImageWithAlt[] | undefined = undefined;
 	export let textColor: InfoBoxTextColorOptions = 'white';
+	export let id: string | undefined = undefined;
 </script>
 
 <div
+	{id}
 	class="
 		text-center
 		{textColor == 'white' ? 'text-white' : 'text-black'}
 		bg-[#ee2f24] mx-1 mb-1 py-2 rounded-lg
+		shadow-sm shadow-black
 	"
 >
 	<h1 class="text-2xl">{title}</h1>

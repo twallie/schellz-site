@@ -6,8 +6,9 @@
 	export let description: string | undefined = undefined;
 	export let images: ImageWithAlt[] | undefined = undefined;
 	export let textColor: InfoBoxTextColorOptions = 'white';
+	export let onClick: (() => void) | undefined = undefined;
 </script>
 
-<button>
+<button on:click={onClick}>
 	<HomepageInfoBox {title} {description} {images} {textColor} />
 </button>

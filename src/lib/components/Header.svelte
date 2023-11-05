@@ -14,6 +14,8 @@
 		<img src={Logo} alt="Schellz's Logo" />
 	</div>
 	<div class="h-[50px] w-[50px] my-auto ml-auto mr-5">
-		<button on:click={flipSidenavValue}><img src={Sidenav} alt="sidenav button" /></button>
+		<button on:click={flipSidenavValue} hidden={sidenavClicked}
+			><img src={Sidenav} alt="sidenav button" /></button
+		>
 	</div>
 </div>
