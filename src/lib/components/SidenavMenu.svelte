@@ -16,8 +16,7 @@
 		if (element == null) {
 			return;
 		}
-		element.scrollIntoView();
-		scrollBy(0, -200);
+		element.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
 		sidenavClicked = false;
 	}
 </script>
