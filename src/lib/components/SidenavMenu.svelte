@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ClickableInfoBox from './ClickableInfoBox.svelte';
+	import StyledButton from './StyledButton.svelte';
 
 	export let sidenavClicked: boolean = false;
 
@@ -13,10 +13,10 @@
 	};
 </script>
 
-<div class="flex flex-col fixed w-full h-full pt-5 px-10 bg-slate-200 bg-opacity-[70%]">
-	<ClickableInfoBox textColor="black" title="Order Now" />
-	<ClickableInfoBox onClick={scrollToHokkaiDough} textColor="black" title="HokkaiDough" />
-	<ClickableInfoBox textColor="black" title="Find Us" />
-	<ClickableInfoBox textColor="black" title="Full Menu" />
-	<ClickableInfoBox textColor="black" title="FAQ" />
+<div class="flex flex-col fixed w-full h-full pt-5 px-10 bg-slate-200 bg-opacity-[70%] space-y-1">
+	<StyledButton text="Order Now" />
+	<StyledButton text="Hokkaidough" />
+	<StyledButton text="Find Us" />
+	<StyledButton text="Full Menu" />
+	<StyledButton text="FAQ" />
 </div>
