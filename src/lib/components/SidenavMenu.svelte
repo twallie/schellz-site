@@ -15,7 +15,7 @@
 
 <div class="flex flex-col fixed w-full h-full pt-5 px-10 bg-slate-200 bg-opacity-[70%] space-y-1">
 	<StyledButton text="Order Now" />
-	<StyledButton text="Hokkaidough" />
+	<StyledButton text="Hokkaidough" onClick={scrollToHokkaiDough} />
 	<StyledButton text="Find Us" />
 	<StyledButton text="Full Menu" />
 	<StyledButton text="FAQ" />
