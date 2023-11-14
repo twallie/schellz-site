@@ -28,7 +28,9 @@
 	{#if images}
 		<div class="flex flex-row justify-center space-x-2">
 			{#each images as image}
-				<img class="object-cover h-20 w-auto" src={image.src} alt={image.alt} />
+				<a href={image.link}>
+					<img class="object-cover h-20 w-auto" src={image.src} alt={image.alt} />
+				</a>
 			{/each}
 		</div>
 	{/if}
