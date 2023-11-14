@@ -6,7 +6,7 @@
 
 	export let sidenavClicked = false;
 	export let visible = true;
-s
+
 	const flipSidenavValue = () => {
 		sidenavClicked = !sidenavClicked;
 	};
