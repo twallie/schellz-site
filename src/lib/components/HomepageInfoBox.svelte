@@ -17,9 +17,9 @@
 		shadow-sm shadow-black
 	"
 >
-	<h1 class="text-2xl font-medium">{title}</h1>
+	<h1 class="text-2xl font-medium {description ? 'pt-2' : ''}">{title}</h1>
 	{#if description}
-		<p class="mt-1">{description}</p>
+		<p class="mt-1 p-2">{description}</p>
 	{/if}
 	{#if images}
 		<div class="flex flex-row justify-center space-x-2">
