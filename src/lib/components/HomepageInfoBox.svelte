@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { FAQItem, ImageWithAlt, InfoBoxTextColorOptions } from '$lib/types';
 	import FaqExpandable from './FaqExpandable.svelte';
+	import StyledButton from './StyledButton.svelte';
 
 	// for faqItems
 
@@ -10,6 +11,8 @@
 	export let textColor: InfoBoxTextColorOptions = 'white';
 	export let id: string | undefined = undefined;
 	export let faqItems: FAQItem[] | undefined = undefined;
+	export let linkText: string | undefined = undefined;
+	export let link: string = '';
 </script>
 
 <div
@@ -38,5 +41,10 @@
 		{#each faqItems as faq}
 			<FaqExpandable {faq} />
 		{/each}
+	{/if}
+	{#if linkText}
+		<div class="mt-5 font-bold underline">
+			<a href={link}>{linkText}</a>
+		</div>
 	{/if}
 </div>

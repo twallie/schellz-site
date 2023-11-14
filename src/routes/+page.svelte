@@ -4,10 +4,12 @@
 	import HomepageHero from '$lib/components/HomepageHero.svelte';
 	import HomepageFaq from '$lib/components/HomepageFaq.svelte';
 	import HomepageContact from '$lib/components/HomepageContact.svelte';
+	import HomepageCatering from '$lib/components/HomepageCatering.svelte';
 </script>
 
 <HomepageHero />
 <HomepageOrderOptions />
 <HomepageHokkaiDough />
+<HomepageCatering />
 <HomepageFaq />
 <HomepageContact />
