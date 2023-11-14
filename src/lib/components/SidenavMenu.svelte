@@ -17,6 +17,7 @@
 			return;
 		}
 		element.scrollIntoView();
+		scrollBy(0, -200);
 		sidenavClicked = false;
 	}
 </script>
