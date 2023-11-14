@@ -16,3 +16,6 @@
 <slot />
 
 <svelte:window bind:scrollY />
+
+<style>
+</style>
