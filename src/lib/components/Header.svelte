@@ -15,7 +15,7 @@
 <div
 	class="flex flex-row justify-between align-middle
 	{visible ? 'visible' : 'invisible'}
-	bg-slate-200 pb-1 bg-opacity-[95%] shadow-2xl"
+	bg-white pb-1 bg-opacity-[95%]"
 >
 	<div class="w-1/2">
 		<img src={Logo} alt="Schellz's Logo" />

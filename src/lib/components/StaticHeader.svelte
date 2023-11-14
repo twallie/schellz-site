@@ -5,6 +5,6 @@
 	$: notTopOfPage = !topOfPage;
 </script>
 
-<div class="f fixed top-0 {notTopOfPage ? 'visible' : 'invisible'}">
+<div class="f fixed top-0 {notTopOfPage ? 'visible shadow-2xl' : 'invisible'}">
 	<Header bind:visible={notTopOfPage} bind:sidenavClicked />
 </div>

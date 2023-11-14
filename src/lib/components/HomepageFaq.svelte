@@ -10,7 +10,7 @@
 		{
 			question: 'How do I reheat Schellz pizzas?',
 			answer:
-				'Due to our long fermentation and our style of dough, you will be surprised to know that Schellz Pizza is quite delicious 2-3 days after purchase.\n\nJust reheat in the oven, wrapped in foil on a baking sheet, at 400f for 10-12 minutes. (If coming from a cold refrigerator; please add 5 mins). Ovens vary, so please check your pizza at 5 min intervals.'
+				'Due to our long fermentation and our style of dough, you will be surprised to know that Schellz Pizza is quite delicious 2-3 days after purchase. Just reheat in the oven, wrapped in foil on a baking sheet, at 400f for 10-12 minutes. (If coming from a cold refrigerator; please add 5 mins). Ovens vary, so please check your pizza at 5 min intervals.'
 		}
 	];
 </script>
