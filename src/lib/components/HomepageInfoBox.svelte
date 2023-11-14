@@ -1,11 +1,15 @@
 <script lang="ts">
-	import type { ImageWithAlt, InfoBoxTextColorOptions } from '$lib/types';
+	import type { FAQItem, ImageWithAlt, InfoBoxTextColorOptions } from '$lib/types';
+	import FaqExpandable from './FaqExpandable.svelte';
+
+	// for faqItems
 
 	export let title: string;
 	export let description: string | undefined = undefined;
 	export let images: ImageWithAlt[] | undefined = undefined;
 	export let textColor: InfoBoxTextColorOptions = 'white';
 	export let id: string | undefined = undefined;
+	export let faqItems: FAQItem[] | undefined = undefined;
 </script>
 
 <div
@@ -27,5 +31,10 @@
 				<img class="object-cover h-20 w-auto" src={image.src} alt={image.alt} />
 			{/each}
 		</div>
+	{/if}
+	{#if faqItems}
+		{#each faqItems as faq}
+			<FaqExpandable {faq} />
+		{/each}
 	{/if}
 </div>

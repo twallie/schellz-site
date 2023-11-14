@@ -4,3 +4,8 @@ export interface ImageWithAlt {
 }
 
 export type InfoBoxTextColorOptions = 'white' | 'black';
+
+export interface FAQItem {
+	question: string;
+	answer: string;
+}
