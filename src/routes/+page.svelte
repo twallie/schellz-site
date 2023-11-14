@@ -23,4 +23,4 @@
 <HomepageOrderOptions />
 <HomepageHokkaiDough />
 
-<HomepageInfoBox title="FAQ" {faqItems} />
+<HomepageInfoBox id="faq" title="FAQ" {faqItems} />
