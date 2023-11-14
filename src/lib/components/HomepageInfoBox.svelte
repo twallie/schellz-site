@@ -13,13 +13,13 @@
 	class="
 		text-center
 		{textColor == 'white' ? 'text-white' : 'text-black'}
-		bg-[#ee2f24] mx-1 mb-1 py-2 rounded-lg
+		bg-[#ee2f24] mx-1 mb-1 py-4 rounded-lg
 		shadow-sm shadow-black
 	"
 >
-	<h1 class="text-2xl font-medium {description ? 'pt-2' : ''}">{title}</h1>
+	<h1 class="text-2xl font-medium">{title}</h1>
 	{#if description}
-		<p class="mt-1 p-2">{description}</p>
+		<p class="mt-1 px-2 pt-1">{description}</p>
 	{/if}
 	{#if images}
 		<div class="flex flex-row justify-center space-x-2">
