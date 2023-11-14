@@ -17,7 +17,7 @@
 		shadow-sm shadow-black
 	"
 >
-	<h1 class="text-2xl">{title}</h1>
+	<h1 class="text-2xl font-medium">{title}</h1>
 	{#if description}
 		<p class="mt-1">{description}</p>
 	{/if}
