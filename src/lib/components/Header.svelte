@@ -17,7 +17,7 @@
 	{visible ? 'visible' : 'invisible'}
 	bg-white pb-1 bg-opacity-[95%]"
 >
-	<div class="w-1/2">
+	<div class="w-1/2 sm:w-[25%] md:w-[20%]">
 		<img src={Logo} alt="Schellz's Logo" />
 	</div>
 	<div class="h-[50px] w-[50px] my-auto ml-auto mr-5">

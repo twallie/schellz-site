@@ -23,6 +23,7 @@
 		text-center
 		{textColor == 'white' ? 'text-white' : 'text-black'}
 		bg-[#ee2f24] mx-1 mb-1 py-4 rounded-lg
+		h-full
 		shadow-sm shadow-black
 	"
 >
