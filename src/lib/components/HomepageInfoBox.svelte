@@ -36,11 +36,13 @@
 	{/if}
 
 	{#if images}
-		<div class="flex flex-row justify-center space-x-2">
+		<div class="flex flex-row justify-center flex-wrap space-x-2 mt-3">
 			{#each images as image}
-				<a href={image.link}>
-					<img class="object-cover h-20 w-auto" src={image.src} alt={image.alt} />
-				</a>
+				<div class="my-auto h-full">
+					<a href={image.link}>
+						<img class="object-cover h-20 w-auto" src={image.src} alt={image.alt} />
+					</a>
+				</div>
 			{/each}
 		</div>
 	{/if}
