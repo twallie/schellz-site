@@ -32,7 +32,7 @@
 	{/if}
 
 	{#if description}
-		<p class="mt-1 px-2 pt-1">{description}</p>
+		<p class="mt-1 px-2 pt-1 md:mx-7">{description}</p>
 	{/if}
 
 	{#if images}
@@ -60,7 +60,7 @@
 	{#if buttonData}
 		<div class="flex flex-row flex-wrap justify-around mt-2">
 			{#each buttonData as data}
-				<div class="">
+				<div class="my-1">
 					<MenuButton text={data[0]} onclick={() => goto(data[1])} />
 				</div>
 			{/each}
