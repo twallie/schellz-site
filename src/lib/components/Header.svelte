@@ -15,7 +15,9 @@
 
 <div
 	class="flex flex-row justify-between align-middle
-	bg-white pb-1 bg-opacity-[95%]"
+	bg-white pb-1 bg-opacity-[95%]
+	{visible ? '' : 'invisible'}
+	"
 >
 	<div class="w-1/2 sm:w-[25%] md:w-[20%] lg:[15%]">
 		<img src={Logo} alt="Schellz's Logo" />
@@ -28,7 +30,7 @@
 	</div>
 </div>
 {#if sidenavClicked && visible}
-	<div in:fly={{ x: 200, duration: 200 }} out:fly={{ x: 200, duration: 200 }}>
+	<div  class="h-full">
 		<SidenavMenu bind:sidenavClicked />
 	</div>
 {/if}
