@@ -21,7 +21,9 @@
 	}
 </script>
 
-<div class="flex flex-col fixed w-full h-full pt-5 px-10 bg-slate-200 bg-opacity-[70%] space-y-1">
+<div
+	class="flex flex-col space-y-3 fixed w-full h-full pt-[20%] md:pt-[10%] px-10 bg-slate-200 bg-opacity-[70%] md:w-[50%] md:right-0"
+>
 	<StyledButton text="Order Now" />
 	<StyledButton text="Hokkaidough" onClick={scrollToHokkaiDough} />
 	<StyledButton text="Find Us" />
