@@ -1,11 +1,20 @@
 <script lang="ts">
-	import type { ImageWithAlt, InfoBoxTextColorOptions } from '$lib/types';
+	import { goto } from '$app/navigation';
+	import type { FAQItem, ImageWithAlt, InfoBoxTextColorOptions } from '$lib/types';
+	import FaqExpandable from './FaqExpandable.svelte';
+	import MenuButton from './MenuButton.svelte';
 
-	export let title: string;
+	// for faqItems
+
+	export let title: string | undefined = undefined;
 	export let description: string | undefined = undefined;
 	export let images: ImageWithAlt[] | undefined = undefined;
 	export let textColor: InfoBoxTextColorOptions = 'white';
 	export let id: string | undefined = undefined;
+	export let faqItems: FAQItem[] | undefined = undefined;
+	export let linkText: string | undefined = undefined;
+	export let link: string = '';
+	export let buttonData: string[][] | undefined = undefined;
 </script>
 
 <div
@@ -13,18 +22,49 @@
 	class="
 		text-center
 		{textColor == 'white' ? 'text-white' : 'text-black'}
-		bg-[#ee2f24] mx-1 mb-1 py-2 rounded-lg
+		bg-[#ee2f24] mx-1 mb-1 py-4 rounded-lg
+		h-full
 		shadow-sm shadow-black
 	"
 >
-	<h1 class="text-2xl">{title}</h1>
-	{#if description}
-		<p class="mt-1">{description}</p>
+	{#if title}
+		<h1 class="text-2xl font-medium">{title}</h1>
 	{/if}
+
+	{#if description}
+		<p class="mt-1 px-2 pt-1 md:mx-7">{description}</p>
+	{/if}
+
 	{#if images}
-		<div class="flex flex-row justify-center space-x-2">
+		<div class="flex flex-row justify-center flex-wrap space-x-2 mt-3">
 			{#each images as image}
-				<img class="object-cover h-20 w-auto" src={image.src} alt={image.alt} />
+				<div class="my-auto h-full">
+					<a href={image.link}>
+						<img class="object-cover h-20 w-auto" src={image.src} alt={image.alt} />
+					</a>
+				</div>
+			{/each}
+		</div>
+	{/if}
+
+	{#if faqItems}
+		{#each faqItems as faq}
+			<FaqExpandable {faq} />
+		{/each}
+	{/if}
+
+	{#if linkText}
+		<div class="mt-5 font-bold underline">
+			<a href={link}>{linkText}</a>
+		</div>
+	{/if}
+
+	{#if buttonData}
+		<div class="flex flex-row flex-wrap justify-around mt-2">
+			{#each buttonData as data}
+				<div class="my-1">
+					<MenuButton text={data[0]} onclick={() => goto(data[1])} />
+				</div>
 			{/each}
 		</div>
 	{/if}

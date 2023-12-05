@@ -9,15 +9,18 @@
 	const images: ImageWithAlt[] = [
 		{
 			src: UberEatsLogo,
-			alt: 'UberEats logo'
+			alt: 'UberEats logo',
+			link: 'https://www.ubereats.com/store/schellz-pizza-co/EPEQxsAGQDCj2zouyuer3w'
 		},
 		{
 			src: DoorDashLogo,
-			alt: 'DoorDash logo'
+			alt: 'DoorDash logo',
+			link: 'https://www.doordash.com/store/schellz-pizza-co-los-angeles-24518174/'
 		},
 		{
 			src: ToastLogo,
-			alt: 'Toast logo'
+			alt: 'Toast logo',
+			link: 'https://www.toasttab.com/local/order/schellzpizza/r-7d7ea823-73f1-4015-b6e9-b6e198d8b49d'
 		}
 	];
 </script>

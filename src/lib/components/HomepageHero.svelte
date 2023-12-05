@@ -3,5 +3,5 @@
 </script>
 
 <div class="flex justify-center mb-1 mx-1">
-	<img class="rounded-3xl" src={HeroImage} alt="A delicious pizza" />
+	<img class="rounded-3xl w-full" src={HeroImage} alt="A delicious pizza" />
 </div>

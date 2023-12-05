@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'LibreFranklin';
+	src: url('/fonts/LibreFranklin-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: Black;
+}
+
+@font-face {
+	font-family: 'LibreFranklin';
+	src: url('/fonts/LibreFranklin-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: Bold;
+}
+
+@font-face {
+	font-family: 'LibreFranklin';
+	src: url('/fonts/LibreFranklin-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: ExtraBold;
+}
+
+@font-face {
+	font-family: 'LibreFranklin';
+	src: url('/fonts/LibreFranklin-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: ExtraLight;
+}
+
+@font-face {
+	font-family: 'LibreFranklin';
+	src: url('/fonts/LibreFranklin-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: Light;
+}
+
+@font-face {
+	font-family: 'LibreFranklin';
+	src: url('/fonts/LibreFranklin-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: Medium;
+}
+
+@font-face {
+	font-family: 'LibreFranklin';
+	src: url('/fonts/LibreFranklin-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: SemiBold;
+}
+
+@font-face {
+	font-family: 'LibreFranklin';
+	src: url('/fonts/LibreFranklin-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: Light;
+}
+
+@font-face {
+	font-family: 'LibreFranklin';
+	src: url('/fonts/LibreFranklin-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: Normal;
+}
