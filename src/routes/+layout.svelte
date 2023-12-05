@@ -11,7 +11,7 @@
 	$: topOfPage = scrollY == 0;
 </script>
 
-<Header bind:sidenavClicked bind:visible={topOfPage} />
+<Header bind:sidenavClicked visible={false} />
 <StaticHeader bind:sidenavClicked bind:topOfPage />
 <slot />
 <Footer />

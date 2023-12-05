@@ -25,4 +25,4 @@
 	];
 </script>
 
-<HomepageInfoBox {title} {images} />
+<HomepageInfoBox id="order" {title} {images} />

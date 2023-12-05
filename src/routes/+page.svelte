@@ -16,6 +16,7 @@
 		</div>
 		<div class="md:col-span-3">
 			<HomepageInfoBox
+				id="menu"
 				title="Menus"
 				buttonData={[
 					['Location 1', 'menu.png'],
