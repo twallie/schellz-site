@@ -3,6 +3,7 @@
 	import XSymbol from '$lib/images/x.svg';
 	import Sidenav from '$lib/images/sidenav-button.svg';
 	import SidenavMenu from './SidenavMenu.svelte';
+	import { fly } from 'svelte/transition';
 
 	export let sidenavClicked = false;
 	export let visible = true;
@@ -14,7 +15,6 @@
 
 <div
 	class="flex flex-row justify-between align-middle
-	{visible ? 'visible' : 'invisible'}
 	bg-white pb-1 bg-opacity-[95%]"
 >
 	<div class="w-1/2 sm:w-[25%] md:w-[20%] lg:[15%]">
@@ -28,5 +28,7 @@
 	</div>
 </div>
 {#if sidenavClicked && visible}
-	<SidenavMenu bind:sidenavClicked />
+	<div in:fly={{ x: 200, duration: 200 }} out:fly={{ x: 200, duration: 200 }}>
+		<SidenavMenu bind:sidenavClicked />
+	</div>
 {/if}
