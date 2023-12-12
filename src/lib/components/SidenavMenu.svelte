@@ -31,7 +31,23 @@
 </script>
 
 <div
-	class="flex flex-col space-y-3 fixed w-full h-full pt-[20%] md:pt-[10%] px-10 bg-slate-200 bg-opacity-[70%] md:w-[50%] md:right-0"
+	class="
+		flex flex-col space-y-3
+		fixed
+		w-full h-full pt-[20%] px-10
+		bg-slate-200 bg-opacity-[70%]
+
+		md:w-[50%]
+		md:right-0
+		md:pt-[10%]
+
+		lg:flex-row
+		lg:justify-center lg:space-x-3
+		lg:space-y-0
+		lg:w-[100%]
+		lg:h-[10%]
+		lg:p-0
+	"
 	in:fly={{ x: 200, duration: 200 }}
 	out:fly={{ x: 200, duration: 200 }}
 >
