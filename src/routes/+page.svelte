@@ -5,7 +5,7 @@
 	import HomepageFaq from '$lib/components/HomepageFaq.svelte';
 	import HomepageContact from '$lib/components/HomepageContact.svelte';
 	import HomepageCatering from '$lib/components/HomepageCatering.svelte';
-	import HomepageInfoBox from '$lib/components/HomepageInfoBox.svelte';
+	import HomepageMenu from '$lib/components/HomepageMenu.svelte';
 </script>
 
 <div class="md:mx-[15%] lg:mx-[25%] 2xl:mx-[35%]">
@@ -15,14 +15,7 @@
 			<HomepageOrderOptions />
 		</div>
 		<div class="md:col-span-3">
-			<HomepageInfoBox
-				id="menu"
-				title="Menus"
-				buttonData={[
-					['Location 1', 'menu.png'],
-					['Location 2', 'menu.png']
-				]}
-			/>
+			<HomepageMenu />
 		</div>
 	</div>
 	<HomepageCatering />
