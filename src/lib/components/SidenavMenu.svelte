@@ -45,7 +45,7 @@
 		lg:justify-center lg:space-x-3
 		lg:space-y-0
 		lg:w-[100%]
-		lg:h-[10%]
+		lg:h-[75px]
 		lg:p-0
 	"
 	in:fly={{ x: 200, duration: 200 }}
