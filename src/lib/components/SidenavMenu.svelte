@@ -2,6 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import StyledButton from './StyledButton.svelte';
 	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
 
 	export let sidenavClicked: boolean = false;
 
@@ -22,10 +23,15 @@
 	};
 
 	const goToLocations = () => {
+		sidenavClicked = false;
 		goto('locations');
 	};
 
 	function scrollTo(id: string) {
+		if ($page.url.pathname != '/') {
+			goto('/').then(() => scrollTo(id));
+		}
+
 		const element = document.getElementById(id);
 		if (element == null) {
 			return;
@@ -37,15 +43,15 @@
 
 <div
 	class="
-		flex 
-		flex-col 
+		flex
+		flex-col
 		space-y-3
 		fixed
-		w-full 
-		h-full 
-		pt-[20%] 
+		w-full
+		h-full
+		pt-[20%]
 		px-10
-		bg-slate-200 
+		bg-slate-200
 		bg-opacity-[70%]
 
 		md:w-[50%]
@@ -53,7 +59,7 @@
 		md:pt-[10%]
 
 		lg:flex-row
-		lg:justify-center 
+		lg:justify-center
 		lg:space-x-3
 		lg:space-y-0
 		lg:w-[100%]
