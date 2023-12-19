@@ -2,7 +2,7 @@
 	export let offersCatering: boolean = false;
 </script>
 
-<div class="bg-[#ee2f24] p-5 rounded-lg shadow-md">
+<div class="bg-[#ee2f24] p-5 rounded-lg shadow-sm shadow-black">
 	<h1 class="text-2xl">Location name</h1>
 	<div class="mb-3">
 		<p class="mt-1">Street address</p>
