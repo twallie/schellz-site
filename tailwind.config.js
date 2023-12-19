@@ -11,6 +11,7 @@ export default {
 		colors: {
 			transparent: 'transparent',
 			current: 'currentColor',
+			red: '#ee2f24',
 			white: colors.white,
 			gray: colors.gray,
 			emerald: colors.emerald,
