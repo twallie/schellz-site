@@ -4,8 +4,6 @@
 	import FaqExpandable from './FaqExpandable.svelte';
 	import MenuButton from './MenuButton.svelte';
 
-	// for faqItems
-
 	export let title: string | undefined = undefined;
 	export let description: string | undefined = undefined;
 	export let images: ImageWithAlt[] | undefined = undefined;
@@ -22,7 +20,7 @@
 	class="
 		text-center
 		{textColor == 'white' ? 'text-white' : 'text-black'}
-		bg-[#ee2f24] mx-1 mb-1 py-4 rounded-lg
+		bg-[#ee2f24] py-4 rounded-lg
 		h-full
 		shadow-sm shadow-black
 	"

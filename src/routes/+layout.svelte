@@ -13,7 +13,9 @@
 
 <Header bind:sidenavClicked visible={false} />
 <StaticHeader bind:sidenavClicked bind:topOfPage />
-<slot />
+<div class="mt-2">
+	<slot />
+</div>
 <Footer />
 
 <svelte:window bind:scrollY />

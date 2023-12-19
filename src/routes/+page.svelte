@@ -5,26 +5,31 @@
 	import HomepageFaq from '$lib/components/HomepageFaq.svelte';
 	import HomepageContact from '$lib/components/HomepageContact.svelte';
 	import HomepageCatering from '$lib/components/HomepageCatering.svelte';
-	import HomepageInfoBox from '$lib/components/HomepageInfoBox.svelte';
+	import HomepageMenu from '$lib/components/HomepageMenu.svelte';
+	import LocationBox from '$lib/components/LocationBox.svelte';
+	import PrInfo from '$lib/components/PRInfo.svelte';
 </script>
 
-<div class="md:mx-[15%] lg:mx-[25%] 2xl:mx-[35%]">
+<div class="md:mx-[15%] lg:mx-[25%] 2xl:mx-[35%] space-y-1">
 	<HomepageHero />
-	<div class="md:grid md:grid-cols-12 md:mb-1">
-		<div class="md:col-span-9">
+	<PrInfo
+		text="Schellz's Pizza was ranked #20 in places to eat in Los Angeles!"
+		link="https://www.yelp.com/collection/XaC45OLZQUFiLvTw5cLbvw/Top-100-Places-to-Eat-in-LA-County-2023?utm_content=Collections&utm_source=ishare"
+	/>
+	<div
+		class="
+		space-y-1
+		sm:grid sm:grid-cols-12 sm:space-y-0 sm:gap-1
+	"
+	>
+		<div class="sm:col-span-9">
 			<HomepageOrderOptions />
 		</div>
-		<div class="md:col-span-3">
-			<HomepageInfoBox
-				id="menu"
-				title="Menus"
-				buttonData={[
-					['Location 1', 'menu.png'],
-					['Location 2', 'menu.png']
-				]}
-			/>
+		<div class="sm:col-span-3">
+			<HomepageMenu />
 		</div>
 	</div>
+	<LocationBox />
 	<HomepageCatering />
 	<HomepageHokkaiDough />
 	<HomepageFaq />

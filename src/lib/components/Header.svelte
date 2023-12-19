@@ -3,13 +3,18 @@
 	import XSymbol from '$lib/images/x.svg';
 	import Sidenav from '$lib/images/sidenav-button.svg';
 	import SidenavMenu from './SidenavMenu.svelte';
-	import { fly } from 'svelte/transition';
+	import XButton from './XButton.svelte';
 
 	export let sidenavClicked = false;
 	export let visible = true;
+	export let bannerOpen = true;
 
 	const flipSidenavValue = () => {
 		sidenavClicked = !sidenavClicked;
+	};
+
+	const closeBanner = () => {
+		bannerOpen = false;
 	};
 </script>
 
@@ -19,7 +24,7 @@
 	{visible ? '' : 'invisible'}
 	"
 >
-	<div class="w-1/2 sm:w-[25%] md:w-[20%] lg:[15%]">
+	<div class="w-1/2 sm:w-[25%] md:w-[20%] lg:w-[15%] xl:[10%]">
 		<img src={Logo} alt="Schellz's Logo" />
 	</div>
 	<div class="h-[50px] w-[50px] my-auto ml-auto mr-5">
@@ -29,8 +34,25 @@
 		</button>
 	</div>
 </div>
+{#if bannerOpen}
+	<div
+		class="
+		bg-red
+		text-center
+		flex flex-row justify-between align-middle
+		py-2
+		r rounded-b-lg
+		{visible ? '' : 'invisible'}
+	"
+	>
+		<div class="w-full">
+			<p class="text-center font-bold text-lg underline">25% OFF ALL ORDERS</p>
+		</div>
+		<XButton onClick={closeBanner} />
+	</div>
+{/if}
 {#if sidenavClicked && visible}
-	<div  class="h-full">
+	<div class="h-full">
 		<SidenavMenu bind:sidenavClicked />
 	</div>
 {/if}
