@@ -1,12 +1,21 @@
 <script lang="ts">
+	import Tomato from './Tomato.svelte';
+
 	export let offersCatering: boolean = false;
 </script>
 
 <div class="bg-[#ee2f24] p-5 rounded-lg shadow-sm shadow-black">
-	<h1 class="text-2xl">Location name</h1>
-	<div class="mb-3">
-		<p class="mt-1">Street address</p>
-		<p class="mt-1">City, state, zip</p>
+	<div class="flex flex-row">
+		<div class="my-auto">
+			<Tomato />
+		</div>
+		<div class="my-auto ml-5">
+			<h1 class="text-2xl">Location name</h1>
+			<div class="mb-3">
+				<p class="mt-1">Street address</p>
+				<p class="mt-1">City, state, zip</p>
+			</div>
+		</div>
 	</div>
 	<iframe
 		title="Google Maps"
