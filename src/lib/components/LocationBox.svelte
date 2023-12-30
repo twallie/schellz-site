@@ -4,7 +4,7 @@
 	export let offersCatering: boolean = false;
 </script>
 
-<div class="bg-[#ee2f24] p-5 rounded-lg shadow-sm shadow-black">
+<div id="location" class="bg-[#ee2f24] p-5 rounded-lg shadow-sm shadow-black">
 	<div class="flex flex-row">
 		<div class="my-auto">
 			<Tomato />

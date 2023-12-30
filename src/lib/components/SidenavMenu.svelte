@@ -23,8 +23,7 @@
 	};
 
 	const goToLocations = () => {
-		sidenavClicked = false;
-		goto('locations');
+		scrollTo('location');
 	};
 
 	function scrollTo(id: string) {
