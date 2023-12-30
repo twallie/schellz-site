@@ -58,7 +58,7 @@
 	{/if}
 
 	{#if buttonData}
-		<div class="flex flex-row flex-wrap justify-around mt-2 mt-5">
+		<div class="flex flex-row flex-wrap justify-around mt-6">
 			{#each buttonData as data}
 				<div class="my-1">
 					<MenuButton text={data[0]} onclick={() => goto(data[1])} />
