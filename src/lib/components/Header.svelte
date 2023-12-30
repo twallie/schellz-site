@@ -7,7 +7,7 @@
 
 	export let sidenavClicked = false;
 	export let visible = true;
-	export let bannerOpen = true;
+	let bannerOpen = false; // set to true to reenable banner
 
 	const flipSidenavValue = () => {
 		sidenavClicked = !sidenavClicked;
