@@ -10,7 +10,7 @@
 	import PrInfo from '$lib/components/PRInfo.svelte';
 </script>
 
-<div class="md:mx-[15%] lg:mx-[25%] 2xl:mx-[35%] space-y-1">
+<div class="md:mx-[15%] lg:mx-[25%] space-y-1">
 	<HomepageHero />
 	<PrInfo
 		text="Schellz's Pizza was ranked #20 in places to eat in Los Angeles!"
