@@ -14,8 +14,8 @@
 		scrollTo('faq');
 	};
 
-	const scrollToMenu = () => {
-		scrollTo('menu');
+	const goToMenu = () => {
+		goto('/menu.png');
 	};
 
 	const scrollToOrder = () => {
@@ -71,6 +71,6 @@
 	<StyledButton text="Order Now" onClick={scrollToOrder} />
 	<StyledButton text="Hokkaidough" onClick={scrollToHokkaiDough} />
 	<StyledButton text="Find Us" onClick={goToLocations} />
-	<StyledButton text="Full Menu" onClick={scrollToMenu} />
+	<StyledButton text="Full Menu" onClick={goToMenu} />
 	<StyledButton text="FAQ" onClick={scrollToFAQ} />
 </div>
