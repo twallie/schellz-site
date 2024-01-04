@@ -24,7 +24,7 @@
 	{visible ? '' : 'invisible'}
 	"
 >
-	<div class="w-1/2 sm:w-[25%] md:w-[20%] lg:w-[15%] xl:[10%]">
+	<div class="w-[150px] md:w-[225px]">
 		<img src={Logo} alt="Schellz's Logo" />
 	</div>
 	<div class="h-[50px] w-[50px] my-auto ml-auto mr-5">
