@@ -4,16 +4,16 @@
 	export let offersCatering: boolean = false;
 </script>
 
-<div class="bg-[#ee2f24] p-5 rounded-lg shadow-sm shadow-black">
+<div id="location" class="bg-[#ee2f24] p-5 rounded-lg shadow-sm shadow-black">
 	<div class="flex flex-row">
 		<div class="my-auto">
 			<Tomato />
 		</div>
 		<div class="my-auto ml-5">
-			<h1 class="text-2xl">Location name</h1>
+			<h1 class="text-2xl">Schellz Pizza Co.</h1>
 			<div class="mb-3">
-				<p class="mt-1">Street address</p>
-				<p class="mt-1">City, state, zip</p>
+				<p class="mt-1">6732 Crenshaw Blvd</p>
+				<p class="mt-1">Los Angeles, CA 90043</p>
 			</div>
 		</div>
 	</div>

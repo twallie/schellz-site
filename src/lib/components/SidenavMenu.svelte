@@ -4,6 +4,13 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 
+	import Instagram from '$lib/images/instagram.png';
+	import Yelp from '$lib/images/yelp.svg';
+	import TikTok from '$lib/images/tiktok.svg';
+	import LinkedIn from '$lib/images/linkedin.svg';
+
+	import NavbarPhotoButton from './NavbarPhotoButton.svelte';
+
 	export let sidenavClicked: boolean = false;
 
 	const scrollToHokkaiDough = () => {
@@ -14,8 +21,8 @@
 		scrollTo('faq');
 	};
 
-	const scrollToMenu = () => {
-		scrollTo('menu');
+	const goToMenu = () => {
+		goto('/menu.png');
 	};
 
 	const scrollToOrder = () => {
@@ -23,8 +30,7 @@
 	};
 
 	const goToLocations = () => {
-		sidenavClicked = false;
-		goto('locations');
+		scrollTo('location');
 	};
 
 	function scrollTo(id: string) {
@@ -43,35 +49,58 @@
 
 <div
 	class="
-		flex
-		flex-col
-		space-y-3
-		fixed
-		w-full
-		h-full
-		pt-[20%]
-		px-10
-		bg-slate-200
-		bg-opacity-[70%]
+	flex flex-col fixed
+	w-full
+	h-full
+	bg-slate-200
+	bg-opacity-[70%]
+	py-5 align-middle
 
-		md:w-[50%]
-		md:right-0
-		md:pt-[10%]
+	md:w-[50%]
+	md:right-0
 
-		lg:flex-row
-		lg:justify-center
-		lg:space-x-3
-		lg:space-y-0
-		lg:w-[100%]
-		lg:h-[75px]
-		lg:p-0
+	lg:w-[35%]
+
+	xl:w-[100%]
+	xl:left-0
+	xl:h-auto
+	xl:px-[300px]
 	"
 	in:fly={{ x: 200, duration: 200 }}
 	out:fly={{ x: 200, duration: 200 }}
 >
-	<StyledButton text="Order Now" onClick={scrollToOrder} />
-	<StyledButton text="Hokkaidough" onClick={scrollToHokkaiDough} />
-	<StyledButton text="Find Us" onClick={goToLocations} />
-	<StyledButton text="Full Menu" onClick={scrollToMenu} />
-	<StyledButton text="FAQ" onClick={scrollToFAQ} />
+	<div
+		class="
+			flex
+			flex-col
+			space-y-3
+			w-full
+			mb-5
+			px-[50px]
+			pb-5
+
+			xl:flex-row
+			xl:space-y-0
+			xl:space-x-3
+			xl:justify-around
+			xl:mb-0
+		"
+	>
+		<StyledButton text="Order Now" onClick={scrollToOrder} />
+		<StyledButton text="Hokkaidough" onClick={scrollToHokkaiDough} />
+		<StyledButton text="Find Us" onClick={goToLocations} />
+		<StyledButton text="Full Menu" onClick={goToMenu} />
+		<StyledButton text="FAQ" onClick={scrollToFAQ} />
+	</div>
+	<div
+		class="
+		flex flex-row justify-around flex-wrap mx-10
+		xl:space-x-10
+		"
+	>
+		<NavbarPhotoButton src={Instagram} alt="Instagram" giveBackground={true} />
+		<NavbarPhotoButton src={Yelp} alt="Yelp" />
+		<NavbarPhotoButton src={TikTok} alt="TikTok" />
+		<NavbarPhotoButton src={LinkedIn} alt="LinkedIn" />
+	</div>
 </div>

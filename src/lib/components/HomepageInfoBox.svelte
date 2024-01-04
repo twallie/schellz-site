@@ -34,7 +34,7 @@
 	{/if}
 
 	{#if images}
-		<div class="flex flex-row justify-center flex-wrap space-x-2 mt-3">
+		<div class="flex flex-row justify-around flex-wrap mt-3 mx-10">
 			{#each images as image}
 				<div class="my-auto h-full">
 					<a href={image.link}>
@@ -58,7 +58,7 @@
 	{/if}
 
 	{#if buttonData}
-		<div class="flex flex-row flex-wrap justify-around mt-2">
+		<div class="flex flex-row flex-wrap justify-around mt-6">
 			{#each buttonData as data}
 				<div class="my-1">
 					<MenuButton text={data[0]} onclick={() => goto(data[1])} />
