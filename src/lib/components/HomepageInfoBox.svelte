@@ -34,9 +34,11 @@
 	{/if}
 
 	{#if images}
-		<div class="flex flex-row justify-around flex-wrap mt-3 mx-10">
+		<div class="flex flex-row justify-around flex-wrap mt-3 mx-7">
 			{#each images as image}
-				<div class="my-auto h-full">
+				<div
+					class="px-6 py-3 bg-red-500 h-full shadow rounded-2xl gap-1 m-1 space-x-2 shadow-black mb-3"
+				>
 					<a href={image.link}>
 						<img class="object-cover h-20 w-auto" src={image.src} alt={image.alt} />
 					</a>
