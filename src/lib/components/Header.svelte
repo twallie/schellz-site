@@ -29,12 +29,11 @@
 	<div
 		class="
 		w-[200px] md:w-[225px]
-		ml-3
 		"
 	>
 		<img src={Logo} alt="Schellz's Logo" />
 	</div>
-	<div class=" h-[50px] w-[50px] my-auto mr-10 md:mr-0 lg:scale-125">
+	<div class=" h-[50px] w-[50px] my-auto mr-2 lg:scale-125">
 		<button on:click={flipSidenavValue}>
 			<img class={sidenavClicked ? 'hidden' : ''} src={Sidenav} alt="Open sidenav button" />
 			<img class={!sidenavClicked ? 'hidden' : ''} src={XSymbol} alt="Close sidenav button" />

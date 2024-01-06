@@ -19,13 +19,13 @@
 	<div
 		class="
 		space-y-1
-		sm:grid sm:grid-cols-12 sm:space-y-0 sm:gap-1
+		lg:grid lg:grid-cols-12 lg:space-y-0 lg:gap-1
 	"
 	>
-		<div class="sm:col-span-9">
+		<div class="lg:col-span-9">
 			<HomepageOrderOptions />
 		</div>
-		<div class="sm:col-span-3">
+		<div class="lg:col-span-3">
 			<HomepageMenu />
 		</div>
 	</div>

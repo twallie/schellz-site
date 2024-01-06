@@ -11,9 +11,6 @@
 		bg-[#ee2f24] rounded-lg
 		shadow-sm shadow-black
 		py-2 px-2
-		md:mx-[10%]
-		lg:mx-0
-		lg:mt-0
 	"
 	>
 		<h1 class="text-2xl font-medium">{text}</h1>
