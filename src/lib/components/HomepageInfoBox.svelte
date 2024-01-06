@@ -60,11 +60,9 @@
 	{/if}
 
 	{#if buttonData}
-		<div class="flex flex-row flex-wrap justify-around mt-6">
+		<div class="flex flex-row flex-wrap flex-1 h-[80%] justify-center">
 			{#each buttonData as data}
-				<div class="my-1">
-					<MenuButton text={data[0]} onclick={() => goto(data[1])} />
-				</div>
+				<MenuButton text={data[0]} onclick={() => goto(data[1])} />
 			{/each}
 		</div>
 	{/if}
