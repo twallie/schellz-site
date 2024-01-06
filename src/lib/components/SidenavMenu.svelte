@@ -98,9 +98,26 @@
 		xl:space-x-10
 		"
 	>
-		<NavbarPhotoButton src={Instagram} alt="Instagram" giveBackground={true} />
-		<NavbarPhotoButton src={Yelp} alt="Yelp" />
-		<NavbarPhotoButton src={TikTok} alt="TikTok" />
-		<NavbarPhotoButton src={LinkedIn} alt="LinkedIn" />
+		<NavbarPhotoButton
+			src={Instagram}
+			alt="Instagram"
+			giveBackground={true}
+			linkTo="https://www.instagram.com/schellz_pizza_co/?hl=en"
+		/>
+		<NavbarPhotoButton
+			src={Yelp}
+			alt="Yelp"
+			linkTo="https://www.yelp.com/biz/schellz-pizza-los-angeles-9"
+		/>
+		<NavbarPhotoButton
+			src={TikTok}
+			alt="TikTok"
+			linkTo="https://www.tiktok.com/@schellz_pizza_co"
+		/>
+		<NavbarPhotoButton
+			src={LinkedIn}
+			alt="LinkedIn"
+			linkTo="https://www.linkedin.com/company/schellz/"
+		/>
 	</div>
 </div>
