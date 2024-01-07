@@ -11,6 +11,7 @@
 		shadow shadow-black
 		p-2
 		sm:flex sm:flex-row sm:justify-center
+		xl:text-xl
 	"
 >
 	<p class="mb-2 sm:mb-0">{text}</p>

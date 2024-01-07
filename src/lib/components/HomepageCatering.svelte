@@ -12,19 +12,17 @@
 	class="
 		text-center
 		bg-[#ee2f24] py-4 rounded-lg
-		h-full
+		h-[100%]
 		shadow-sm shadow-black
 		text-white
-		pb-6
-		lg:py-[50px]
+		flex flex-col
 	"
 >
-	<div class="flex flex-col align-middle">
-		<h1 class="text-2xl font-medium mx-5">{title}</h1>
-
-		<div>
-			<p class="mt-1 px-2 pt-1 md:mx-7">{description}</p>
-			<div class="mt-5 font-bold underline hover:text-gray-300">
+	<div class="my-auto flex flex-col space-y-5">
+		<h1 class="text-3xl font-medium mx-5">{title}</h1>
+		<div class="mx-10 xl:text-xl space-y-5">
+			<p class="">{description}</p>
+			<div class="font-bold underline hover:text-gray-300">
 				<a href={link}>{linkText}</a>
 			</div>
 		</div>
