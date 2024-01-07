@@ -1,8 +1,7 @@
 <script lang="ts">
-	import HeroImage0 from '$lib/images/hero.jpg';
-	import HeroImage1 from '$lib/images/pizza-hero-1.jpg';
-	import HeroImage2 from '$lib/images/pizza-hero-2.jpg';
-	import { fade } from 'svelte/transition';
+	import HeroImage0 from '$lib/images/Homepage1_lowres.jpg';
+	import HeroImage1 from '$lib/images/Homepage2_lowres.jpg';
+	import HeroImage2 from '$lib/images/Homepage3_lowres.jpg';
 	import HeroImage from './HeroImage.svelte';
 
 	const PRELOAD = [HeroImage0, HeroImage1, HeroImage2];
