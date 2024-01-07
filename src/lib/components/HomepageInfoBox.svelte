@@ -39,7 +39,7 @@
 			<div class="flex flex-row lg:flex-col justify-around flex-wrap lg:flex-nowrap mt-5">
 				{#each images as image}
 					<div
-						class="px-6 py-3 bg-red-500 shadow rounded-2xl gap-1 m-1 space-x-2 shadow-black mb-3 mx-auto"
+						class="px-6 py-3 bg-red-500 shadow-md active:shadow-inner active:shadow-black hover:bg-[#b01f17] rounded-2xl gap-1 m-1 space-x-2 shadow-black mb-3 mx-auto"
 					>
 						<a href={image.link}>
 							<img class="object-cover mx-auto h-20" src={image.src} alt={image.alt} />
