@@ -26,10 +26,11 @@
 	:global(body) {
 		background-image: url('experiment_cropped.png');
 		background-repeat: repeat;
+		background-size: 300px 300px;
 		animation-name: move;
 		animation-direction: forward;
 		animation-iteration-count: infinite;
-		animation-duration: 5s;
+		animation-duration: 3s;
 		animation-timing-function: linear;
 	}
 
@@ -38,7 +39,7 @@
 			background-position: 0px 0px;
 		}
 		100% {
-			background-position: 450px 450px;
+			background-position: 300px 300px;
 		}
 	}
 </style>
