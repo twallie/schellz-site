@@ -24,12 +24,12 @@
 
 <style lang="postcss">
 	:global(body) {
-		background-image: url('experiment.png');
+		background-image: url('experiment_cropped.png');
 		background-repeat: repeat;
 		animation-name: move;
 		animation-direction: forward;
 		animation-iteration-count: infinite;
-		animation-duration: 10s;
+		animation-duration: 5s;
 		animation-timing-function: linear;
 	}
 
@@ -38,7 +38,7 @@
 			background-position: 0px 0px;
 		}
 		100% {
-			background-position: 1000px 656px;
+			background-position: 450px 450px;
 		}
 	}
 </style>
