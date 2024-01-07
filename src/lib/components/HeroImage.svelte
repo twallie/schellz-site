@@ -9,7 +9,7 @@
 <img
 	in:fade={{ duration: transitionMs }}
 	out:fade={{ duration: transitionMs }}
-	class="object-cover rounded-xl w-full -z-50 aspect-video"
+	class="object-cover rounded-xl w-full aspect-video z-[5]"
 	{src}
 	{alt}
 />

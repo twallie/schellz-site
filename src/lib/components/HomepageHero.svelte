@@ -66,5 +66,7 @@
 			src={HeroImage2}
 			alt="A side profile of the right side of a delicious looking pizza."
 		/>
+	{:else if shown == -1}
+		<div class="h-[500px] bg-white" />
 	{/if}
 </div>
