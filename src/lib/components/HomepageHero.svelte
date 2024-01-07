@@ -47,7 +47,7 @@
 	{/each}
 </svelte:head>
 
-<div class="flex justify-center h-full -z-50">
+<div class="flex justify-center h-[250px] lg:h-full -z-50">
 	{#if shown == 0}
 		<HeroImage
 			transitionMs={HERO_IMAGE_TRANSITION_MS}
