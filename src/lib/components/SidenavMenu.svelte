@@ -22,7 +22,7 @@
 	};
 
 	const goToMenu = () => {
-		goto('/menu.png');
+		goto('/menu.jpg');
 	};
 
 	const scrollToOrder = () => {

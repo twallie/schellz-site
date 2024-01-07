@@ -24,7 +24,7 @@
 	<div class="flex flex-col align-middle">
 		<h1 class="text-2xl font-medium mx-5">Menu</h1>
 		<div class="my-auto">
-			<MenuButton text="View" onclick={() => goto('menu.png')} />
+			<MenuButton text="View" onclick={() => goto('menu.jpg')} />
 		</div>
 	</div>
 	<div class="my-auto">

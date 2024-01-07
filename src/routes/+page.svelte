@@ -11,7 +11,7 @@
 </script>
 
 <div
-	class="mx-1 md:mx-[15%] p-1 md:p-3 rounded-lg space-y-1 bg-slate-200 shadow-sm shadow-red -z-40 bg-opacity-90"
+	class="mx-1 md:mx-[15%] lg:mx-[20%] p-1 rounded-lg space-y-1 bg-slate-200 shadow-sm shadow-red -z-40 bg-opacity-90"
 >
 	<PrInfo
 		text="Schellz's Pizza was ranked #20 in places to eat in Los Angeles!"
