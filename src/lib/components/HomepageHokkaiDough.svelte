@@ -5,6 +5,7 @@
 -->
 <script lang="ts">
 	import HomepageInfoBox from './HomepageInfoBox.svelte';
+	import Tomato from './Tomato.svelte';
 
 	const title = 'What is Hokkaidough?';
 	const description =
@@ -12,4 +13,37 @@
 	const id = 'hokkaidough';
 </script>
 
-<HomepageInfoBox {id} {title} {description} />
+<div
+	{id}
+	class="
+		text-center
+		text-white
+		bg-red
+		rounded-lg
+		h-full
+		shadow-sm shadow-black
+		py-5 px-2
+	"
+>
+	<div
+		class="
+		flex flex-col
+		md:flex-row
+		md:justify-evenly
+	"
+	>
+		<div class="mx-auto md:order-last md:my-auto">
+			<Tomato />
+		</div>
+
+		<div class="md:w-[80%] md:ml-5">
+			<h1 class="text-2xl font-medium mx-5">
+				{title}
+			</h1>
+
+			<p class="md:mt-3">
+				{description}
+			</p>
+		</div>
+	</div>
+</div>
