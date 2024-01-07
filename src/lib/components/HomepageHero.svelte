@@ -2,8 +2,10 @@
 	import HeroImage0 from '$lib/images/hero.jpg';
 	import HeroImage1 from '$lib/images/pizza-hero-1.jpg';
 	import HeroImage2 from '$lib/images/pizza-hero-2.jpg';
-	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import HeroImage from './HeroImage.svelte';
+
+	const PRELOAD = [HeroImage0, HeroImage1, HeroImage2];
 
 	// Total length an image is shown
 	const HERO_CYCLE_MS = 10000;
@@ -36,34 +38,33 @@
 
 	$: {
 		shown = shown == 3 ? 0 : shown;
-		console.log(shown);
 	}
 </script>
 
-<div class="flex justify-center h-full">
+<svelte:head>
+	{#each PRELOAD as link}
+		<link rel="preload" as="image" href={link} />
+	{/each}
+</svelte:head>
+
+<div class="flex justify-center h-full -z-50">
 	{#if shown == 0}
-		<img
-			in:fade={{ duration: HERO_IMAGE_TRANSITION_MS }}
-			out:fade={{ duration: HERO_IMAGE_TRANSITION_MS }}
-			class="object-cover rounded-xl w-full"
+		<HeroImage
+			transitionMs={HERO_IMAGE_TRANSITION_MS}
 			src={HeroImage0}
-			alt="A delicious pizza"
+			alt="An overhead view of a delicious looking pizza."
 		/>
 	{:else if shown == 1}
-		<img
-			in:fade={{ duration: HERO_IMAGE_TRANSITION_MS }}
-			out:fade={{ duration: HERO_IMAGE_TRANSITION_MS }}
-			class="object-cover rounded-xl w-full"
+		<HeroImage
+			transitionMs={HERO_IMAGE_TRANSITION_MS}
 			src={HeroImage1}
-			alt="A delicious pizza"
+			alt="A side profile of the left side of a delicious looking pizza."
 		/>
 	{:else if shown == 2}
-		<img
-			in:fade={{ duration: HERO_IMAGE_TRANSITION_MS }}
-			out:fade={{ duration: HERO_IMAGE_TRANSITION_MS }}
-			class="object-cover rounded-xl w-full"
+		<HeroImage
+			transitionMs={HERO_IMAGE_TRANSITION_MS}
 			src={HeroImage2}
-			alt="A delicious pizza"
+			alt="A side profile of the right side of a delicious looking pizza."
 		/>
 	{/if}
 </div>

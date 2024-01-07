@@ -24,6 +24,7 @@
 	px-2 pt-2 pb-3
 	lg:px-[150px] lg:py-[25px]
 	{visible ? '' : 'invisible'}
+	z-50
 	"
 >
 	<div
