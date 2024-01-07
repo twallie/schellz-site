@@ -14,5 +14,11 @@
 	"
 >
 	<p class="mb-2 sm:mb-0">{text}</p>
-	<a href={link} class="sm:mt-0 sm:ml-2 underline font-bold text-black">See details</a>
+	<a
+		href={link}
+		class="
+		sm:mt-0 sm:ml-2 underline font-bold text-black
+		hover:text-gray-200
+	">See details</a
+	>
 </div>

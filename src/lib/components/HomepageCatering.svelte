@@ -24,7 +24,7 @@
 
 		<div>
 			<p class="mt-1 px-2 pt-1 md:mx-7">{description}</p>
-			<div class="mt-5 font-bold underline">
+			<div class="mt-5 font-bold underline hover:text-gray-300">
 				<a href={link}>{linkText}</a>
 			</div>
 		</div>
