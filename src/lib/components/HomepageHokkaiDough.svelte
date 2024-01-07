@@ -33,7 +33,7 @@
 		md:justify-evenly
 	"
 	>
-		<div class="mx-auto md:order-last md:my-auto">
+		<div class="mx-auto md:order-last mb-4 md:my-auto">
 			<Mushroom />
 		</div>
 
