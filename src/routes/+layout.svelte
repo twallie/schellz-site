@@ -24,7 +24,7 @@
 
 <style lang="postcss">
 	:global(body) {
-		background-image: url('experiment_cropped.png');
+		background-image: url('https://schellz-site.vercel.app/experiment_cropped.png');
 		background-repeat: repeat;
 		background-size: 300px 300px;
 		animation-name: move;
