@@ -10,24 +10,30 @@
 	import PrInfo from '$lib/components/PRInfo.svelte';
 </script>
 
-<div class="md:mx-[15%] lg:mx-[25%] space-y-1">
+<div class="md:mx-[15%] lg:mx-[20%] space-y-1">
 	<PrInfo
 		text="Schellz's Pizza was ranked #20 in places to eat in Los Angeles!"
 		link="https://www.yelp.com/collection/XaC45OLZQUFiLvTw5cLbvw/Top-100-Places-to-Eat-in-LA-County-2023?utm_content=Collections&utm_source=ishare"
 	/>
-	<div class="xl:flex xl:flex-row xl:h-[500px] space-y-1 xl:space-y-0 xl:space-x-1 w-full">
-		<div class="xl:flex xl:flex-col space-y-1">
-			<div class="h-[75%]">
+	<div class="lg:flex lg:flex-row lg:h-[500px] space-y-1 lg:space-y-0 lg:space-x-1 w-full">
+		<div class="lg:flex lg:flex-col space-y-1 w-[100%]">
+			<div class="h-[70%]">
 				<HomepageHero />
 			</div>
-			<div class="h-[25%]">
+			<div class="h-[30%]">
 				<HomepageMenu />
 			</div>
 		</div>
 		<HomepageOrderOptions />
 	</div>
-	<LocationBox />
-	<HomepageCatering />
+	<div class="space-y-1 lg:space-y-0 lg:space-x-1 lg:flex lg:flex-row">
+		<div class="lg:w-[80%]">
+			<LocationBox />
+		</div>
+		<div class="lg:w-[40%]">
+			<HomepageCatering />
+		</div>
+	</div>
 	<HomepageHokkaiDough />
 	<HomepageFaq />
 	<HomepageContact />

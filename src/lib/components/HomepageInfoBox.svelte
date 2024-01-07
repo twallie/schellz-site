@@ -23,47 +23,50 @@
 		bg-[#ee2f24] py-4 rounded-lg
 		h-full
 		shadow-sm shadow-black
+		pb-6
 	"
 >
-	{#if title}
-		<h1 class="text-2xl font-medium">{title}</h1>
-	{/if}
+	<div class="flex flex-col align-middle">
+		{#if title}
+			<h1 class="text-2xl font-medium mx-5">{title}</h1>
+		{/if}
 
-	{#if description}
-		<p class="mt-1 px-2 pt-1 md:mx-7">{description}</p>
-	{/if}
+		{#if description}
+			<p class="mt-1 px-2 pt-1 md:mx-7">{description}</p>
+		{/if}
 
-	{#if images}
-		<div class="flex flex-row justify-around flex-wrap mt-10">
-			{#each images as image}
-				<div
-					class="px-6 py-3 bg-red-500 h-full shadow rounded-2xl gap-1 m-1 space-x-2 shadow-black mb-3"
-				>
-					<a href={image.link}>
-						<img class="object-cover h-20 w-auto" src={image.src} alt={image.alt} />
-					</a>
-				</div>
+		{#if images}
+			<div class="flex flex-row lg:flex-col justify-around flex-wrap lg:flex-nowrap mt-5">
+				{#each images as image}
+					<div
+						class="px-6 py-3 bg-red-500 shadow rounded-2xl gap-1 m-1 space-x-2 shadow-black mb-3 mx-auto"
+					>
+						<a href={image.link}>
+							<img class="object-cover mx-auto h-20" src={image.src} alt={image.alt} />
+						</a>
+					</div>
+				{/each}
+			</div>
+		{/if}
+
+		{#if faqItems}
+			{#each faqItems as faq}
+				<FaqExpandable {faq} />
 			{/each}
-		</div>
-	{/if}
+		{/if}
 
-	{#if faqItems}
-		{#each faqItems as faq}
-			<FaqExpandable {faq} />
-		{/each}
-	{/if}
+		{#if linkText}
+			<div class="mt-5 font-bold underline">
+				<a href={link}>{linkText}</a>
+			</div>
+		{/if}
 
-	{#if linkText}
-		<div class="mt-5 font-bold underline">
-			<a href={link}>{linkText}</a>
-		</div>
-	{/if}
-
-	{#if buttonData}
-		<div class="flex flex-row flex-wrap flex-1 h-[80%] mt-1 xl:mt-0 justify-center">
-			{#each buttonData as data}
-				<MenuButton text={data[0]} onclick={() => goto(data[1])} />
-			{/each}
-		</div>
-	{/if}
+		{#if buttonData}
+			<div class="flex flex-row flex-wrap flex-1 h-[80%] xl:mt-0 justify-center">
+				{#each buttonData as data}
+					<MenuButton text={data[0]} onclick={() => goto(data[1])} />
+				{/each}
+			</div>
+		{/if}
+	</div>
 </div>
