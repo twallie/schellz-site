@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import MenuButton from './MenuButton.svelte';
+	import Onion from './Onion.svelte';
+	import Pineapple from './Pineapple.svelte';
 	import Tomato from './Tomato.svelte';
 </script>
 
@@ -17,7 +19,7 @@
 	"
 >
 	<div class="my-auto">
-		<Tomato />
+		<Onion />
 	</div>
 	<div class="flex flex-col align-middle">
 		<h1 class="text-2xl font-medium mx-5">Menu</h1>
@@ -26,6 +28,6 @@
 		</div>
 	</div>
 	<div class="my-auto">
-		<Tomato />
+		<Pineapple />
 	</div>
 </div>

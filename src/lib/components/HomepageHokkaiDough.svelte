@@ -5,6 +5,7 @@
 -->
 <script lang="ts">
 	import HomepageInfoBox from './HomepageInfoBox.svelte';
+	import Mushroom from './Mushroom.svelte';
 	import Tomato from './Tomato.svelte';
 
 	const title = 'What is Hokkaidough?';
@@ -33,7 +34,7 @@
 	"
 	>
 		<div class="mx-auto md:order-last md:my-auto">
-			<Tomato />
+			<Mushroom />
 		</div>
 
 		<div class="md:w-[80%] md:ml-5">

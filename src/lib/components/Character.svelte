@@ -3,4 +3,4 @@
 	export let alt: string;
 </script>
 
-<img {src} {alt} class="w-[100px] h-[100px]" />
+<img {src} {alt} class="w-auto h-[100px]" />
