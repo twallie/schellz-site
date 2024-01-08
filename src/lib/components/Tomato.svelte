@@ -1,5 +1,6 @@
 <script lang="ts">
+	import Character from './Character.svelte';
 	import Tomato from '$lib/images/characters/tomato.png';
 </script>
 
-<img src={Tomato} class="w-[100px] h-[100px]" alt="Mr. Tomato" />
+<Character src={Tomato} alt="A happy tomato man." />

@@ -4,6 +4,8 @@
 	import StaticHeader from '$lib/components/StaticHeader.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
+	import ExperimentalBackground from '$lib/images/experimental/PINEAPPLE_zoomed_out.png';
+
 	let sidenavClicked: boolean = false;
 	let scrollY = 0;
 
@@ -19,3 +21,25 @@
 <Footer />
 
 <svelte:window bind:scrollY />
+
+<style lang="postcss">
+	:global(body) {
+		background-image: url('experiment_cropped.png');
+		background-repeat: repeat;
+		background-size: 300px 300px;
+		animation-name: move;
+		animation-direction: forward;
+		animation-iteration-count: infinite;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+	}
+
+	@keyframes move {
+		0% {
+			background-position: 0px 0px;
+		}
+		100% {
+			background-position: 300px 300px;
+		}
+	}
+</style>

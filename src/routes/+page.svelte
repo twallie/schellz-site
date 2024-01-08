@@ -10,27 +10,32 @@
 	import PrInfo from '$lib/components/PRInfo.svelte';
 </script>
 
-<div class="md:mx-[15%] lg:mx-[25%] space-y-1">
-	<HomepageHero />
+<div
+	class="mx-1 md:mx-[15%] lg:mx-[20%] p-0.5 rounded-lg space-y-1 bg-slate-200 shadow-sm shadow-red -z-40 bg-opacity-90"
+>
 	<PrInfo
 		text="Schellz's Pizza was ranked #20 in places to eat in Los Angeles!"
 		link="https://www.yelp.com/collection/XaC45OLZQUFiLvTw5cLbvw/Top-100-Places-to-Eat-in-LA-County-2023?utm_content=Collections&utm_source=ishare"
 	/>
-	<div
-		class="
-		space-y-1
-		sm:grid sm:grid-cols-12 sm:space-y-0 sm:gap-1
-	"
-	>
-		<div class="sm:col-span-9">
-			<HomepageOrderOptions />
+	<div class="lg:flex lg:flex-row lg:h-[500px] space-y-1 lg:space-y-0 lg:space-x-1 w-full">
+		<div class="lg:flex lg:flex-col space-y-1 w-[100%]">
+			<div class="h-[70%]">
+				<HomepageHero />
+			</div>
+			<div class="h-[30%]">
+				<HomepageMenu />
+			</div>
 		</div>
-		<div class="sm:col-span-3">
-			<HomepageMenu />
+		<HomepageOrderOptions />
+	</div>
+	<div class="space-y-1 lg:space-y-0 lg:space-x-1 lg:flex lg:flex-row">
+		<div class="lg:w-[80%]">
+			<LocationBox />
+		</div>
+		<div class="lg:w-[40%]">
+			<HomepageCatering />
 		</div>
 	</div>
-	<LocationBox />
-	<HomepageCatering />
 	<HomepageHokkaiDough />
 	<HomepageFaq />
 	<HomepageContact />

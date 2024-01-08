@@ -8,9 +8,17 @@
 		class="
 		text-center
 	    text-white
+		text-xl
+		font-bold
 		bg-red-900 rounded-lg
-		shadow-sm shadow-black
-		py-2 px-2
+		shadow-md shadow-black
+		py-2 px-5
+		mt-3
+		sm:mt-0
+
+		hover:bg-darkred
+		active:shadow-inner
+		active:shadow-black
 	"
 	>
 		<h1 class="text-md font-medium">{text}</h1>

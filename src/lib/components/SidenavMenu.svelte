@@ -22,7 +22,7 @@
 	};
 
 	const goToMenu = () => {
-		goto('/menu.png');
+		goto('/menu.jpg');
 	};
 
 	const scrollToOrder = () => {
@@ -61,46 +61,70 @@
 
 	lg:w-[35%]
 
-	xl:w-[100%]
-	xl:left-0
-	xl:h-auto
-	xl:px-[300px]
+	2xl:w-auto
+	2xl:left-0
+	2xl:h-auto
 	"
 	in:fly={{ x: 200, duration: 200 }}
 	out:fly={{ x: 200, duration: 200 }}
 >
 	<div
 		class="
+		mx-5
+		xl:px-5
+		2xl:w-[750px]
+		2xl:mx-auto
+	"
+	>
+		<div
+			class="
 			flex
 			flex-col
 			space-y-3
 			w-full
 			mb-5
-			px-[50px]
 			pb-5
 
-			xl:flex-row
-			xl:space-y-0
-			xl:space-x-3
-			xl:justify-around
-			xl:mb-0
+			2xl:flex-row
+			2xl:space-y-0
+			2xl:space-x-3
+			2xl:justify-between
+			2xl:mb-0
 		"
-	>
-		<StyledButton text="Order Now" onClick={scrollToOrder} />
-		<StyledButton text="Hokkaidough" onClick={scrollToHokkaiDough} />
-		<StyledButton text="Find Us" onClick={goToLocations} />
-		<StyledButton text="Full Menu" onClick={goToMenu} />
-		<StyledButton text="FAQ" onClick={scrollToFAQ} />
-	</div>
-	<div
-		class="
-		flex flex-row justify-around flex-wrap mx-10
-		xl:space-x-10
+		>
+			<StyledButton text="Order Now" onClick={scrollToOrder} />
+			<StyledButton text="Hokkaidough" onClick={scrollToHokkaiDough} />
+			<StyledButton text="Find Us" onClick={goToLocations} />
+			<StyledButton text="Full Menu" onClick={goToMenu} />
+			<StyledButton text="FAQ" onClick={scrollToFAQ} />
+		</div>
+		<div
+			class="
+		flex flex-row justify-around flex-wrap
+		xl:justify-between
 		"
-	>
-		<NavbarPhotoButton src={Instagram} alt="Instagram" giveBackground={true} />
-		<NavbarPhotoButton src={Yelp} alt="Yelp" />
-		<NavbarPhotoButton src={TikTok} alt="TikTok" />
-		<NavbarPhotoButton src={LinkedIn} alt="LinkedIn" />
+		>
+			<NavbarPhotoButton
+				src={Instagram}
+				alt="Instagram"
+				giveBackground={true}
+				linkTo="https://www.instagram.com/schellz_pizza_co/?hl=en"
+			/>
+			<NavbarPhotoButton
+				src={Yelp}
+				alt="Yelp"
+				linkTo="https://www.yelp.com/biz/schellz-pizza-los-angeles-9"
+			/>
+			<NavbarPhotoButton
+				src={TikTok}
+				alt="TikTok"
+				linkTo="https://www.tiktok.com/@schellz_pizza_co"
+			/>
+			<NavbarPhotoButton
+				src={LinkedIn}
+				alt="LinkedIn"
+				linkTo="https://www.linkedin.com/company/schellz/"
+			/>
+		</div>
 	</div>
 </div>
